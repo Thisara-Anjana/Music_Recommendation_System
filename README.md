@@ -47,8 +47,3 @@ This repository contains a Music Recommendation System implemented with Jupyter 
 - Summarize main results and best-performing model in the `Results & Findings` section of the README or the notebooks.
 - Next steps: expand feature engineering, add audio features, build a small web demo (Streamlit / FastAPI).
 
-## Author
-Thisara-Anjana
-
-## License
-Specify a license (e.g., MIT) by adding a LICENSE file.
