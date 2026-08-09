@@ -1,11 +1,54 @@
 # 🎵 Music Recommendation System
-This project is a machine learning–based music recommendation system built with Python, pandas, and Streamlit. It analyzes user preferences and music data to generate personalized song recommendations in an interactive web app.
 
-✨ Key Features
-Streamlit UI: Clean and interactive interface for exploring recommendations.
+This repository contains a Music Recommendation System implemented with Jupyter Notebooks and Python. The notebooks explore music data, preprocess features, train recommendation models, and provide example inference to generate personalized song recommendations.
 
-pandas-powered data handling: Efficient preprocessing, cleaning, and analysis of music datasets.
+## Contents
+- notebooks/
+  - EDA_and_Preprocessing.ipynb  — exploratory data analysis and preprocessing
+  - Modeling.ipynb               — model training, tuning, and evaluation
+  - Inference_and_Examples.ipynb — inference examples and usage
+- data/                          — datasets (not included)
+- models/                        — saved model artifacts (if any)
 
-Machine Learning models: Implements similarity-based approaches to recommend songs tailored to user input.
+## Key features
+- Data exploration and visualization (pandas, matplotlib, seaborn)
+- Preprocessing pipelines for user and track features
+- Baseline and matrix-factorization recommendation approaches
+- Evaluation with ranking metrics (Precision@K, Recall@K, NDCG)
+- Example inference notebook showing how to get recommendations
 
-Visualization: Displays insights and recommendation
+## Quickstart
+1. Clone the repo:
+
+   git clone https://github.com/Thisara-Anjana/Music_Recommendation_System.git
+   cd Music_Recommendation_System
+
+2. Create and activate a Python environment, then install dependencies:
+
+   python -m venv venv
+   source venv/bin/activate  # macOS / Linux
+   venv\Scripts\activate    # Windows
+   pip install -r requirements.txt
+
+3. Place your dataset files in the `data/` directory or update notebook paths.
+4. Open the notebooks in JupyterLab/Notebook and run them in order.
+
+## Notes on data
+- Datasets are not included in the repository. Add your CSVs or dataset downloads to `data/`.
+- If you used the Spotify API, Million Song Dataset, or other sources, include attribution and license details in this section.
+
+## Requirements
+- Python 3.8+
+- Jupyter
+- pandas, numpy, scikit-learn, scipy, matplotlib, seaborn
+- Optional (if used): surprise, lightfm, librosa, streamlit
+
+## Results & Next steps
+- Summarize main results and best-performing model in the `Results & Findings` section of the README or the notebooks.
+- Next steps: expand feature engineering, add audio features, build a small web demo (Streamlit / FastAPI).
+
+## Author
+Thisara-Anjana
+
+## License
+Specify a license (e.g., MIT) by adding a LICENSE file.
